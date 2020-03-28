@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Андрей Решетов](https://up.htmlacademy.ru/adaptive/19/user/647095).
-* Наставник: `Никита Победоносцев` (https://htmlacademy.ru/profile/id502263).
+* Наставник: `Никита Победоносцев`(https://htmlacademy.ru/profile/id502263).
 
 ---
 
