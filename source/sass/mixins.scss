@@ -1,0 +1,19 @@
+@mixin titleText($dark) {
+  color: $dark;
+  font-family: $opensansLight;
+  font-size: 24px;
+  text-align: center;
+}
+
+@mixin infoText($dark) {
+  color: $dark;
+  font-family: $opensans;
+  font-size: 14px;
+  line-height: 2.14;
+}
+
+@mixin titleTextBold($black) {
+  color: $black;
+  font-family: $opensansBold;
+  font-size: 18px;
+}
