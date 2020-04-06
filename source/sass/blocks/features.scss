@@ -1,0 +1,9 @@
+.features__title {
+  @include titleText($dark);
+  margin-top: 46px;
+  margin-bottom: 0;
+}
+
+.features__item {
+  margin-bottom: 40px;
+}
