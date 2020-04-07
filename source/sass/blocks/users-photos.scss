@@ -3,6 +3,8 @@
   padding-bottom: 71px;
   @include titleText($white);
   background-image: url(../../img/bg-back-mobile@1x.jpg);
+  background-repeat: no-repeat;
+  background-color: $dark;
   margin-top: 0;
   margin-bottom: 70px;
 }
