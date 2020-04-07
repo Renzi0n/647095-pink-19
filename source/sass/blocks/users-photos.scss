@@ -1,0 +1,22 @@
+.users-photos__title {
+  padding-top: 35px;
+  padding-bottom: 71px;
+  @include titleText($white);
+  background-image: url(../../img/bg-back-mobile@1x.jpg);
+  margin-top: 0;
+  margin-bottom: 70px;
+}
+
+.users-photos__info-top,
+.users-photos__info-bottom {
+  @include infoText($dark);
+  line-height: 30px;
+  margin-top: 0;
+  margin-bottom: 56px;
+}
+
+.users-photos__info-bottom {
+  margin-bottom: 48px;
+}
+
+
