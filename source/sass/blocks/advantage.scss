@@ -1,6 +1,6 @@
 .advantage__title {
-  margin-top: 0;
   @include titleTextBold($black);
+  margin-top: 0;
 }
 
 .advantage__info {

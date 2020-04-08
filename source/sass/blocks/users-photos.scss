@@ -1,8 +1,9 @@
 .users-photos__title {
   padding-top: 35px;
   padding-bottom: 71px;
+
   @include titleText($white);
-  background-image: url(../../img/bg-back-mobile@1x.jpg);
+  background-image: url("../../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-color: $dark;
   margin-top: 0;
@@ -20,5 +21,3 @@
 .users-photos__info-bottom {
   margin-bottom: 48px;
 }
-
-

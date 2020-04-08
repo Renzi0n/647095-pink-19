@@ -1,8 +1,9 @@
 .contest__title {
   margin: 0;
   padding: 36px 0;
+
   @include titleText($white);
-  background-image: url(../../img/bg-back-mobile@1x.jpg);
+  background-image: url("../../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-color: $dark;
 }
