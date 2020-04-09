@@ -1,0 +1,35 @@
+.application {
+  padding-top: 29px;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-color: $color-background-primary;
+}
+
+.application__wrapper {
+  background-color: $color-background-primary;
+  padding-bottom: 35px;
+}
+
+.application__title {
+  @include titleText($color-font-secondary);
+}
+
+.application__btn {
+  @include titleTextBold;
+  color: $color-font-secondary;
+  background-color: transparent;
+  padding: 20px 40px;
+  margin-top: 28px;
+  margin-bottom: 40px;
+}
+
+.application__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.application__info {
+  @include infoText($color-font-secondary);
+  line-height: 24px;
+}

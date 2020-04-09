@@ -1,0 +1,32 @@
+.post {
+  margin-bottom: 20px;
+  padding-bottom: 28px;
+}
+
+.post__username {
+  color: $color-font-primary;
+  font-weight: 700;
+  font-size: 14px;
+  margin-top: 25px;
+  margin-bottom: 24px;
+}
+
+.post__online-time {
+  color: $color-font-primary;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.post__comment {
+  @include infoText($color-font-primary);
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.post__like {
+  color: $color-font-sub;
+  font-size: 12px;
+  text-transform: uppercase;
+  margin: 0;
+}

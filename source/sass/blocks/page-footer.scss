@@ -1,0 +1,16 @@
+.page-footer {
+  padding: 40px 0;
+}
+
+.page-footer__logo-item {
+  margin-bottom: 40px;
+}
+
+.page-footer__icons {
+  margin-bottom: 40px;
+}
+
+.page-footer__powered-info {
+  @include infoText($color-font-primary);
+  margin: 0;
+}

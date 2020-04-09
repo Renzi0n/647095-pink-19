@@ -1,0 +1,13 @@
+.features__title {
+  @include titleText($color-font-primary);
+  margin-top: 46px;
+  margin-bottom: 0;
+}
+
+.features__wrapper {
+  padding-top: 119px;
+}
+
+.features__item {
+  margin-bottom: 40px;
+}
