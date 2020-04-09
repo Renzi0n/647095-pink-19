@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" type="text/css">
   </head>
   <body>
 
@@ -14,11 +16,11 @@
       <button class="page-header__toggle" type="button">Открыть меню</button>
       <nav class="navigation">
         <ul class="navigation__list">
-          <li class="navigation__item navigation__item--active">
-            <a href="#">Главная</a>
-          </li>
           <li class="navigation__item">
-            <a href="photo.html">Фотографии</a>
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="navigation__item navigation__item--active">
+            <a href="#">Фотографии</a>
           </li>
           <li class="navigation__item">
             <a href="form.html">Конкурс</a>
@@ -38,7 +40,7 @@
       <section class="users-photos">
 
         <h2 class="users-photos__title">Фотографии пользователей</h2>
-        <p class="users-photos__info">
+        <p class="users-photos__info users-photos__info--top">
           Взгляните на фотографии,
           которые выкладывают пользователи!
           Видите как не хватает ваших?
@@ -126,7 +128,7 @@
           <p class="post__like">Нравится: 2560</p>
         </article>
 
-        <p class="users-photos__info">
+        <p class="users-photos__info users-photos__info--bottom">
           Затмите всех!
           Выкладывайте все, что накопилось в
           телефоне!
@@ -153,7 +155,7 @@
         </li>
       </ul>
       <p class="page-footer__powered-info">
-        Разработан
+        Разработано
         <a href="#"><img class="page-footer__academy-logo" src="#" alt="Логотип html академии" width="27" height="34"></a>
       </p>
 
