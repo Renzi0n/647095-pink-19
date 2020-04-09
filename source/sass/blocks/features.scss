@@ -1,5 +1,5 @@
 .features__title {
-  @include titleText($dark);
+  @include titleText($color-font-primary);
   margin-top: 46px;
   margin-bottom: 0;
 }

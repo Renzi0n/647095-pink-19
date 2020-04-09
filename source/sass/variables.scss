@@ -1,10 +1,8 @@
-$opensans: "opensans", "Arial", sans-serif;
-$opensansBold: "opensans-bold", "Arial", sans-serif;
-$opensansLight: "opensans-light", "Arial", sans-serif;
+$color-background-primary: rgba(40, 54, 69, 1);
+$color-background-secondary: rgba(242, 242, 242, 1);
 
-$white: rgba(255, 255, 255, 1);
-$dark: rgba(40, 54, 69, 1);
-$black: rgba(0, 0, 0, 1);
-$grey: rgba(242, 242, 242, 1);
-$pink: rgba(210, 40, 86, 1);
-$green: rgba(42, 171, 109, 1);
+$color-font-primary: rgba(40, 54, 69, 1);
+$color-font-secondary: rgba(255, 255, 255, 1);
+$color-font-sub: rgba(210, 40, 86, 1);
+
+$color-button: rgba(42, 171, 109, 1);

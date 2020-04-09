@@ -1,9 +1,13 @@
+.advantage {
+  line-height: 24px;
+  text-align: center;
+}
+
 .advantage__title {
-  @include titleTextBold($black);
+  @include titleTextBold;
   margin-top: 0;
 }
 
 .advantage__info {
-  @include infoText($dark);
-  line-height: 24px;
+  @include infoText($color-font-primary);
 }

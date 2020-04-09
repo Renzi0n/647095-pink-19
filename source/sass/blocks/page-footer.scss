@@ -11,6 +11,6 @@
 }
 
 .page-footer__powered-info {
-  @include infoText($dark);
+  @include infoText($color-font-primary);
   margin: 0;
 }

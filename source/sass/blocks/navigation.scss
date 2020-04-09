@@ -1,11 +1,13 @@
 .navigation__list {
-  list-style-type: none;
+  list-style: none;
   padding: 0;
   margin: 0;
 }
 
 .navigation__item a {
-  @include titleTextBold($white);
+  @include titleTextBold;
+  color: $color-font-secondary;
+  line-height: 32px;
   text-transform: uppercase;
   text-decoration: none;
 }

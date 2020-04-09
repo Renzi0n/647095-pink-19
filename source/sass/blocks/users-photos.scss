@@ -2,22 +2,24 @@
   padding-top: 35px;
   padding-bottom: 71px;
 
-  @include titleText($white);
-  background-image: url("../../img/bg-back-mobile@1x.jpg");
+  @include titleText($color-font-secondary);
+  background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-color: $dark;
+  background-color: $color-background-primary;
   margin-top: 0;
   margin-bottom: 70px;
 }
 
-.users-photos__info-top,
-.users-photos__info-bottom {
-  @include infoText($dark);
+.users-photos__info {
+  @include infoText($color-font-primary);
   line-height: 30px;
   margin-top: 0;
-  margin-bottom: 56px;
-}
 
-.users-photos__info-bottom {
-  margin-bottom: 48px;
+  &--top {
+    margin-bottom: 56px;
+  }
+
+  &--bottom {
+    margin-bottom: 48px;
+  }
 }
