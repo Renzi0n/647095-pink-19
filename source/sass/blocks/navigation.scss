@@ -1,7 +1,18 @@
+.navigation {
+  width: 100%;
+}
+
 .navigation__list {
   list-style: none;
   padding: 0;
   margin: 0;
+}
+
+.navigation__item {
+  height: 63px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .navigation__item a {
@@ -10,4 +21,22 @@
   line-height: 32px;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+@media (min-width: $desktop-width) {
+  .navigation__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .navigation__item {
+    height: auto;
+  }
+
+  .navigation__item a {
+    font-weight: 400;
+    line-height: 18px;
+    text-transform: none;
+  }
 }
