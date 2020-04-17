@@ -99,15 +99,12 @@
     margin-left: 0;
   }
 
-  .post:last-of-type {
-    margin-left: calc((25% - 260px) / 2);
-  }
-
   .post:nth-of-type(2n+1) {
     margin-right: 0;
   }
 
   .post:last-of-type {
+    margin-left: calc((25% - 260px) / 2);
     margin-right: auto;
   }
 

@@ -23,6 +23,7 @@
   .features {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   .features__title {
@@ -48,7 +49,7 @@
 
   .features__item {
     margin-bottom: 46px;
-    width: 294px;
+    min-width: 294px;
     margin-left: 0;
   }
 
