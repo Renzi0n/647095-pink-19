@@ -11,3 +11,15 @@
 .advantage__info {
   @include infoText($color-font-primary);
 }
+
+@media (min-width: $tablet-width) {
+  .advantage {
+    text-align: left;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantage {
+    text-align: center;
+  }
+}

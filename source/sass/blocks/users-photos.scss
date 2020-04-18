@@ -1,18 +1,20 @@
 .users-photos__title {
-  padding-top: 35px;
-  padding-bottom: 71px;
-
   @include titleText($color-font-secondary);
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-color: $color-background-primary;
   margin-top: 0;
   margin-bottom: 70px;
+  padding-top: 35px;
+  padding-bottom: 70px;
+  padding-left: 56px;
+  padding-right: 56px;
 }
 
 .users-photos__info {
   @include infoText($color-font-primary);
   line-height: 30px;
+  text-align: center;
   margin-top: 0;
 
   &--top {
@@ -21,5 +23,18 @@
 
   &--bottom {
     margin-bottom: 48px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .users-photos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .users-photos__info,
+  .users-photos__title {
+    width: 100%;
   }
 }

@@ -2,4 +2,13 @@
   list-style: none;
   padding: 0;
   margin-top: 0;
+  display: flex;
+}
+
+.social__item {
+  margin-right: 17px;
+}
+
+.social__item:last-child {
+  margin-right: 0;
 }
