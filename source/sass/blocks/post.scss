@@ -18,6 +18,7 @@
     padding-bottom: 6px;
     background-color: $color-font-sub;
     text-align: center;
+
     @include titleTextBold;
     color: $color-font-secondary;
     font-size: 12px;
@@ -46,7 +47,7 @@
   padding-bottom: 25px;
 }
 
-.post--panorama .post__wrapper  {
+.post--panorama .post__wrapper {
   margin-left: 20px;
   margin-right: 20px;
 }
@@ -74,7 +75,6 @@
   margin-bottom: 0;
   width: 100%;
   height: auto;
-  margin-top: 0;
 }
 
 .post__like {
@@ -162,7 +162,6 @@
 
   .post--panorama .post__like {
     order: 1;
-    margin-bottom: 24px;
     margin-top: 0;
     margin-bottom: 0;
   }
