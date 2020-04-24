@@ -4,59 +4,78 @@
 
 .features__title {
   @include titleText($color-font-primary);
-  margin-top: 46px;
+  margin-top: 42px;
   margin-bottom: 0;
 }
 
+.features__title:nth-of-type(2) {
+  margin-top: 30px;
+}
+
 .features__wrapper {
-  padding-top: 119px;
+  padding-top: 114px;
+  height: 703px;
+  overflow: hidden;
 }
 
 .features__item {
-  width: 252px;
+  width: 259px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 40px;
+  margin-bottom: 32px;
+}
+
+.features__image {
+  display: block;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
 }
 
 @media (min-width: $tablet-width) {
   .features {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
   }
 
   .features__title {
-    width: 575px;
     margin: 0 auto;
-    margin-top: 59px;
+    margin-top: 49px;
     margin-bottom: 22px;
+    font-size: 40px;
   }
 
   .features__title:nth-of-type(1) {
     margin-bottom: 0;
+    width: 600px;
   }
 
   .features__title:nth-of-type(2) {
     margin-top: 0;
+    width: 500px;
   }
 
   .features__wrapper {
-    padding-top: 104px;
-    width: 50%;
-    order: 1;
+    padding-top: 98px;
+    width: 100%;
+    position: relative;
+    height: auto;
   }
 
   .features__item {
-    margin-bottom: 46px;
-    min-width: 294px;
-    margin-left: 0;
+    margin-bottom: 36px;
+    margin-right: 0;
+    width: 50%;
   }
 
   .features__image {
-    padding-top: 28px;
-    width: 50%;
-    order: 0;
+    padding-top: 0;
+    position: absolute;
+    top: 13px;
+    margin-top: 0;
   }
 }
 
@@ -68,23 +87,34 @@
     @include desktopPaddings;
   }
 
-  .features__title {
-    width: 733px;
+  .features__title:nth-of-type(n) {
+    width: 100%;
+    font-size: 50px;
+    margin-top: 69px;
+  }
+
+  .features__title:nth-of-type(2) {
+    width: 700px;
+    font-size: 50px;
+    margin-top: 0;
   }
 
   .features__wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    min-height: 550px;
+    min-height: auto;
     width: auto;
-    margin-top: 75px;
+    margin-top: 54px;
     padding: 0;
   }
 
   .features__item {
-    width: 236px;
+    width: 25vw;
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .features__image {

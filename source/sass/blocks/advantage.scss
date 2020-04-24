@@ -6,10 +6,14 @@
 .advantage__title {
   @include titleTextBold;
   margin-top: 0;
+  margin-bottom: 10px;
 }
 
 .advantage__info {
   @include infoText($color-font-primary);
+  margin-top: 0;
+  line-height: 24px;
+  max-width: 308px;
 }
 
 @media (min-width: $tablet-width) {
@@ -21,5 +25,34 @@
 @media (min-width: $desktop-width) {
   .advantage {
     text-align: center;
+    &::before {
+      content: "";
+      height: 357px;
+      width: 281px;
+      background-repeat: no-repeat;
+    }
+    &:nth-of-type(1)::before {
+      background-image: url(../../img/iphone-screen-1-desktop@1x.png);
+    }
+    &:nth-of-type(2)::before {
+      background-image: url(../../img/iphone-screen-2-desktop@1x.png);
+    }
+    &:nth-of-type(3)::before {
+      background-image: url(../../img/iphone-screen-3-desktop@1x.png);
+    }
+  }
+
+  .advantage__title {
+    font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 23px;
+    max-width: 231px;
+  }
+
+  .advantage__info {
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 0;
+    max-width: 240px;
   }
 }

@@ -3,10 +3,31 @@
   padding: 0;
   margin-top: 0;
   display: flex;
+  justify-content: space-between;
 }
 
 .social__item {
-  margin-right: 17px;
+  margin-right: 12px;
+  border-radius: 50px;
+  border: 3px solid rgba(40, 54, 69, 0.1);
+  width: 46px;
+  height: 46px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    border: 3px solid $color-background-primary;
+    cursor: pointer;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.social__item svg{
+  fill: $color-font-sub;
 }
 
 .social__item:last-child {
