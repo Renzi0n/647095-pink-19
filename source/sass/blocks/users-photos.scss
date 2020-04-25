@@ -3,10 +3,12 @@
   @include mobilePaddings;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
+  background-size: 100%;
   background-color: $color-background-primary;
   margin-top: 0;
   padding-top: 30px;
   padding-bottom: 82px;
+  box-sizing: border-box;
 }
 
 .users-photos__info {
@@ -38,8 +40,9 @@
 
   .users-photos__title {
     background-image: url("../img/bg-back-desktop@1x.jpg");
+    background-size: cover;
     font-size: 50px;
-    padding-top: 69px;
+    padding-top: 65px;
     padding-bottom: 140px;
     padding-left: 156px;
     padding-right: 156px;
@@ -48,7 +51,7 @@
 
   .users-photos__info {
     font-size: 18px;
-    max-width: 446px;
+    width: 446px;
     margin-top: 49px;
     margin-bottom: 75px;
   }
@@ -56,18 +59,16 @@
 
 @media (min-width: $desktop-width) {
   .users-photos__title {
-    padding-top: 64px;
-    padding-bottom: 100px;
-    padding-left: 400px;
-    padding-right: 400px;
+    padding: 64px 400px 100px 400px;
   }
 
   .users-photos__info {
-    max-width: 580px;
+    width: 100%;
   }
 
   .users-photos__info--top {
     margin-bottom: 90px;
+    min-width: 600px;
   }
 
   .users-photos__info--bottom {

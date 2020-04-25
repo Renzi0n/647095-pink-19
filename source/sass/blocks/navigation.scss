@@ -9,7 +9,7 @@
 }
 
 .navigation__item {
-  min-height: 63px;
+  min-height: 64px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -37,6 +37,10 @@
   }
 }
 
+.navigation__item--active a {
+  pointer-events: none;
+}
+
 @media (min-width: $desktop-width) {
   .navigation__list {
     display: flex;
@@ -44,13 +48,13 @@
     flex-wrap: wrap;
     margin-top: auto;
     height: 100%;
-  }
 
-  .navigation__item:nth-of-type(n) {
-    min-height: auto;
-    box-shadow: none;
-    border: none;
-    margin-top: auto;
+    .navigation__item {
+      min-height: auto;
+      box-shadow: none;
+      border: none;
+      margin-top: auto;
+    }
   }
 
   .navigation__item a {
