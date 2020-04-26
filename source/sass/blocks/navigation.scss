@@ -9,7 +9,7 @@
 }
 
 .navigation__item {
-  min-height: 64px;
+  height: 64px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -50,7 +50,7 @@
     height: 100%;
 
     .navigation__item {
-      min-height: auto;
+      height: auto;
       box-shadow: none;
       border: none;
       margin-top: auto;

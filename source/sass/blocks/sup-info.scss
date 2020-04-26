@@ -1,13 +1,13 @@
 .sup-info {
   display: none;
   justify-content: space-between;
-  margin-top: 69px;
+  padding-top: 69px;
 
   @include mobilePaddings;
 }
 
 .sup-info__image {
-  fill: $color-background-secondary;
+  fill: rgba(222, 222, 222, 1);
   position: relative;
 }
 
@@ -51,7 +51,8 @@
   .sup-info {
     @include desktopPaddings;
 
-    margin-top: 65px;
+    padding-top: 65px;
+    background-color: $color-background-secondary;
   }
 
   .sup-info__title {

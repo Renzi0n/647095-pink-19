@@ -51,9 +51,12 @@
 
   .users-photos__info {
     font-size: 18px;
-    width: 446px;
     margin-top: 49px;
     margin-bottom: 75px;
+  }
+
+  .users-photos__info--top {
+    min-width: 440px;
   }
 }
 
