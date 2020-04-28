@@ -305,6 +305,25 @@
 
       </section>
 
+      <section class="editor">
+        <img src="#" alt="Фотография дороги" width="280" height="374">
+        <form class="editor__form" action="#" method="GET">
+          <div class="editor__menu">
+            <button class="editor__form-crop" type="button" title="Обрезать фото"></button>
+            <input type="range" min="0" max="100" step="1" value="50" id="rangeCrop">
+            <label class="visually-hidden" for="rangeCrop">Выбрать величину</label>
+            <button class="editor__form-fill" type="button" title="Заливка"></button>
+            <input type="range" min="0" max="100" step="1" value="50" id="rangeFill">
+            <label class="visually-hidden" for="rangeFill">Выбрать величину</label>
+            <button class="editor__form-contrast" type="button" title="Контрастность"></button>
+            <input type="range" min="0" max="100" step="1" value="50" id="rangeContrast">
+            <label class="visually-hidden" for="rangeContrast">Выбрать величину</label>
+          </div>
+          <button type="submit">Запостить</button>
+          <button type="reset">Отмена</button>
+        </form>
+      </section>
+
     </main>
 
     <footer class="page-footer">
