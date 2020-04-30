@@ -124,15 +124,15 @@
             <legend class="form__title">С каким приложением путешествовали?</legend>
             <ul class="form__list">
               <li class="form__list-item">
-                <input class="form__check-input" checked type="radio" name="application" value="iOS" id="ios">
+                <input class="form__radio-input" checked type="radio" name="application" value="iOS" id="ios">
                 <label class="form__check-label" for="ios">Pink для iOS</label>
               </li>
               <li class="form__list-item">
-                <input class="form__check-input" type="radio" name="application" value="Android" id="android">
+                <input class="form__radio-input" type="radio" name="application" value="Android" id="android">
                 <label class="form__check-label" for="android">Pink для Android</label>
               </li>
               <li class="form__list-item">
-                <input class="form__check-input" type="radio" name="application" value="Windows Phone" id="windows">
+                <input class="form__radio-input" type="radio" name="application" value="Windows Phone" id="windows">
                 <label class="form__check-label" for="windows">Windows Phone</label>
               </li>
             </ul>
@@ -184,7 +184,7 @@
 
           <fieldset class="form__emotions">
             <legend class="form__title">Опишите свои эмоции</legend>
-            <textarea class="form__text-input" name="emotions" placeholder="Можно прям в красках, не стесняясь в выражениях" id="emotions" cols="30" rows="10"></textarea>
+            <textarea class="form__text-input form__text-input--textarea" name="emotions" placeholder="Можно прям в красках, не стесняясь в выражениях" id="emotions" cols="30" rows="10"></textarea>
           </fieldset>
 
           <button class="form__submit" type="submit">Отправить форму</button>
@@ -192,26 +192,6 @@
         </form>
 
       </section>
-
-      <div class="modal">
-        <h2 class="modal__title">Что-то пошло не так!</h2>
-        <p class="modal__info">
-          Проверьте поля, выделенные красным,
-          скорее всего вы забыли их заполнить
-        </p>
-        <button class="modal__btn" type="button">Ок</button>
-      </div>
-
-      <div class="modal">
-        <h2 class="modal__title">Ваша заявка отправлена</h2>
-        <p class="modal__info">
-          Спасибо за ваше участие, ваша заявка уже
-          поступила к нам. В ближайшее время мы
-          рассмотрим ее и оповестим вас.
-        </p>
-        <button class="modal__btn" type="button">Закрыть окно</button>
-      </div>
-
 
     </main>
 
@@ -257,6 +237,25 @@
       </p>
 
     </footer>
+
+    <div class="modal">
+      <h2 class="modal__title">Что-то пошло не так!</h2>
+      <p class="modal__info">
+        Проверьте поля, выделенные красным,
+        скорее всего вы забыли их заполнить
+      </p>
+      <button class="modal__btn" type="button">Ок</button>
+    </div>
+
+    <div class="modal">
+      <h2 class="modal__title">Ваша заявка отправлена</h2>
+      <p class="modal__info">
+        Спасибо за ваше участие, ваша заявка уже
+        поступила к нам. В ближайшее время мы
+        рассмотрим ее и оповестим вас.
+      </p>
+      <button class="modal__btn" type="button">Закрыть окно</button>
+    </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/picturefill/3.0.3/picturefill.min.js"></script>
   </body>

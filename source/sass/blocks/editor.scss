@@ -1,0 +1,127 @@
+.editor {
+  background-color: $color-background-secondary;
+  padding: 20px 20px 41px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.editor__menu {
+  padding: 0;
+  list-style: none;
+  min-width: 280px;
+}
+
+.editor__item--active .editor__input {
+  display: block;
+}
+
+.editor__btn {
+  fill: $color-background-primary;
+  opacity: 0.3;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.editor__item--active .editor__btn {
+  display: block;
+  opacity: 1;
+}
+
+.editor__item--active svg {
+  fill: rgba(210, 40, 86, 1);
+}
+
+.editor__submit,
+.editor__reset {
+  @include titleTextBold;
+  line-height: 18px;
+  background-color: transparent;
+  width: 280px;
+  height: 55px;
+  padding: 0;
+  border-radius: 140px;
+  cursor: pointer;
+}
+
+.editor__submit {
+  color: $color-font-sub;
+  border: 3px solid rgba(210, 40, 86, 1);
+  margin-bottom: 12px;
+}
+
+.editor__reset {
+  color: $color-background-primary;
+  border: 3px solid $color-font-primary;
+  opacity: 0.3;
+}
+
+.editor__input {
+  display: none;
+  appearance: none;
+  width: 240px;
+}
+
+.editor__input::-webkit-slider-runnable-track {
+  width: 240px;
+  height: 2px;
+  cursor: pointer;
+  background: #000000;
+}
+
+.editor__input::-webkit-slider-thumb {
+  border: 2px solid rgba(210, 40, 86, 1);
+  height: 14px;
+  width: 14px;
+  border-radius: 14px;
+  background: rgba(242, 242, 242, 1);
+  cursor: pointer;
+  appearance: none;
+  margin: -6px 0;
+}
+
+.editor__input::-moz-range-track {
+  width: 240px;
+  height: 2px;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 1);
+  border-radius: 0;
+}
+
+.editor__input::-moz-range-thumb {
+  border: 2px solid rgba(210, 40, 86, 1);
+  height: 14px;
+  width: 14px;
+  border-radius: 14px;
+  background: rgba(242, 242, 242, 1);
+  cursor: pointer;
+}
+
+.editor__input::-ms-track {
+  width: 240px;
+  height: 16px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+
+.editor__input::-ms-fill-lower {
+  background-color: rgba(0, 0, 0, 1);
+  height: 2px;
+}
+
+.editor__input::-ms-fill-upper {
+  background-color: rgba(0, 0, 0, 1);
+  height: 2px;
+}
+
+.editor__input::-ms-thumb {
+  border: 2px solid rgba(210, 40, 86, 1);
+  width: 14px;
+  border-radius: 14px;
+  background: rgba(242, 242, 242, 1);
+  cursor: pointer;
+  height: 14px;
+}
