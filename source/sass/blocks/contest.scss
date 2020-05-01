@@ -10,6 +10,13 @@
   @include titleText($color-font-secondary);
 }
 
+.contest__info {
+  color: $color-font-primary;
+  font-size: 14px;
+  line-height: 30px;
+  margin: 49px 0;
+}
+
 @media (min-width: $tablet-width) {
   .contest__title {
     background-image: url("../img/bg-back-tablet@1x.jpg");

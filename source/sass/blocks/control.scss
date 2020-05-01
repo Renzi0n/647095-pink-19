@@ -1,0 +1,36 @@
+.control {
+  display: flex;
+  align-items: center;
+}
+
+.control__btn {
+  display: none;
+}
+
+.control__radio {
+  position: absolute;
+  opacity: 0;
+}
+
+.control__radio + label::before {
+  content: "";
+  display: block;
+  width: 6px;
+  height: 6px;
+  background-color: $color-background-primary;
+  opacity: 0.3;
+  border-radius: 6px;
+  margin-right: 19px;
+  cursor: pointer;
+}
+
+.control__radio:focus + label::before {
+  outline: rgba(59, 153, 252, 1) auto 5px;
+}
+
+.control__radio:checked + label::before {
+  background-color: rgba(255, 255, 255, 1);
+  border: 3px solid $color-background-primary;
+  opacity: 1;
+  cursor: default;
+}
