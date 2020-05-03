@@ -6,10 +6,23 @@
   align-items: center;
 }
 
+.editor__image {
+  width: 280px;
+}
+
 .editor__menu {
   padding: 0;
   list-style: none;
-  min-width: 280px;
+  width: 280px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.editor__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .editor__item--active .editor__input {
@@ -22,6 +35,12 @@
   border: none;
   background-color: transparent;
   cursor: pointer;
+  margin: 42px 0 32px;
+}
+
+.editor__btn svg {
+  width: 44px;
+  height: 44px;
 }
 
 .editor__item--active .editor__btn {
@@ -57,10 +76,16 @@
   opacity: 0.3;
 }
 
+.editor__item {
+  margin-bottom: 73px;
+}
+
 .editor__input {
   display: none;
   appearance: none;
   width: 240px;
+  position: absolute;
+  left: calc(50% - 120px);
 }
 
 .editor__input::-webkit-slider-runnable-track {
@@ -124,4 +149,93 @@
   background: rgba(242, 242, 242, 1);
   cursor: pointer;
   height: 14px;
+}
+
+@media (min-width: $tablet-width) {
+  .editor {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .editor__image {
+    width: 300px;
+    height: 400px;
+    margin-right: 45px;
+  }
+
+  .editor__form {
+    width: 275px;
+    height: 400px;
+  }
+
+  .editor__menu {
+    flex-direction: column;
+    margin: 0 0 auto;
+    width: 100%;
+  }
+
+  .editor__item {
+    width: 100%;
+    height: 71px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .editor__btn {
+    opacity: 1;
+  }
+
+  .editor__btn svg {
+    width: 22px;
+    height: 22px;
+    fill: rgba(210, 40, 86, 1);
+  }
+
+  .editor__input {
+    display: block;
+    position: static;
+    width: 202px;
+  }
+
+  .editor__submit,
+  .editor__reset {
+    width: 260px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .editor {
+    width: 800px;
+    margin: 0 auto 28px;
+    padding: 57px 60px 57px 80px;
+  }
+
+  .editor__image {
+    margin-right: 90px;
+  }
+
+  .editor__form {
+    width: 410px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  .editor__btn svg {
+    width: 44px;
+    height: 44px;
+  }
+
+  .editor__submit,
+  .editor__reset {
+    width: 183px;
+  }
+
+  .editor__submit {
+    margin-bottom: 0;
+  }
 }

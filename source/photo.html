@@ -306,7 +306,11 @@
       </section>
 
       <section class="editor">
-        <img class="editor__image" src="img/photo-road-mobile@1x.jpg" alt="Фотография дороги" width="280" height="374">
+        <picture class="editor__pic">
+          <source media="(min-width: 1200px)" srcset="img/photo-road-desktop@1x.jpg">
+          <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg">
+          <img class="editor__image" src="img/photo-road-mobile@1x.jpg" alt="Фотография дороги" width="280" height="374">
+        </picture>
         <form class="editor__form" action="https://echo.htmlacademy.ru/courses" method="GET">
           <ul class="editor__menu">
             <li class="editor__item editor__item--active">
@@ -316,7 +320,7 @@
                   <path d="M34,30h4V14c0-2.21-1.79-4-4-4H18v4h16V30z M14,34V2h-4v8H2v4h8v20c0,2.21,1.79,4,4,4h20v8h4v-8h8v-4H14z"/>
                 </svg>
               </button>
-              <input class="editor__input" type="range" title="Выбрать величину" name="Обрезка" min="0" max="100" step="1" value="50" id="rangeCrop">
+              <input class="editor__input" type="range" title="Выбрать величину" name="crop" min="0" max="100" step="1" value="50" id="rangeCrop">
             </li>
             <li class="editor__item">
               <button class="editor__btn" type="button" title="Заливка">
@@ -326,7 +330,7 @@
                   <rect y="40" width="48" height="3"/>
                 </svg>
               </button>
-              <input class="editor__input" type="range" title="Выбрать величину" name="Заливка" min="0" max="100" step="1" value="50" id="rangeFill">
+              <input class="editor__input" type="range" title="Выбрать величину" name="fill" min="0" max="100" step="1" value="50" id="rangeFill">
             </li>
             <li class="editor__item">
               <button class="editor__btn" type="button" title="Контрастность">
@@ -335,7 +339,7 @@
                   <path d="M-19.462,16.331c4.706,0,8.52-3.813,8.52-8.52c0-4.705-3.813-8.519-8.52-8.519"/>
                 </svg>
               </button>
-              <input class="editor__input" type="range" title="Выбрать величину" name="Контрастность" min="0" max="100" step="1" value="50" id="rangeContrast">
+              <input class="editor__input" type="range" title="Выбрать величину" name="contrast" min="0" max="100" step="1" value="50" id="rangeContrast">
             </li>
           </ul>
           <button class="editor__submit" type="submit">Запостить</button>
