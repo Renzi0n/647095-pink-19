@@ -1,16 +1,20 @@
 .rates {
   padding: 125px 0 48px;
-  overflow: hidden;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 
   &::before {
     content: "";
     position: absolute;
     display: block;
     width: 200%;
-    height: 506px;
+    height: 706px;
     left: -100px;
-    bottom: -55px;
+    bottom: -116px;
     transform: rotate(-6deg);
     z-index: -1;
     background-color: $color-background-secondary;
@@ -26,6 +30,7 @@
   background-color: $color-background-primary;
   padding: 23px 0 21px;
   border: 2px solid #e5e5e5;
+  width: 276px;
 }
 
 .rates__title {
@@ -41,24 +46,101 @@
   margin: 0;
 }
 
-.rates__main-row {
-  background-color: $color-font-secondary;
+.rates__header-row {
+  display: flex;
 }
 
-.rates__main-row td {
+.rates__main-row {
+  background-color: $color-font-secondary;
+  display: flex;
+}
+
+.rates__check {
   border: 2px solid #e5e5e5;
-  padding: 21px 0 17px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 21px 22px 17px 18px;
+  width: 236px;
 }
 
 .rates__row-title {
   @include infoText($color-font-primary);
+  border: 2px solid #e5e5e5;
+  text-transform: uppercase;
+  display: none;
+}
+
+.rates__cell-empty {
+  display: none;
+}
+
+.rates__check-title {
+  @include infoText($color-font-primary);
   text-transform: uppercase;
 }
 
-.rates__check--no svg {
-  fill: rgba(242, 91, 38, 1);
+@media (min-width: $tablet-width) {
+  .rates::before {
+    height: 594px;
+  }
+
+  .rates__table {
+    padding: 0 20px;
+  }
+
+  .rates__cell-empty {
+    display: block;
+    width: 155px;
+  }
+
+  .rates__row-title {
+    width: 137px;
+    display: flex;
+    align-items: center;
+    text-transform: none;
+    padding-left: 15px;
+  }
+
+  .rates__check {
+    width: 152px;
+    padding: 21px 0 17px;
+    justify-content: center;
+  }
+
+  .rates__cell {
+    width: 152px;
+  }
+
+  .rates__check-title {
+    display: none;
+  }
 }
 
-.rates__check--yes svg {
-  fill: rgba(61, 198, 68, 1);
+@media (min-width: $desktop-width) {
+  .rates::before {
+    height: 626px;
+    transform: rotate(-4.5deg);
+  }
+
+  .rates__table {
+    padding: 0 130px;
+  }
+
+  .rates__cell-empty {
+    width: 260px;
+  }
+
+  .rates__row-title {
+    width: 234px;
+    padding-left: 24px;
+  }
+
+  .rates__check {
+    width: 234px;
+  }
+
+  .rates__cell {
+    width: 234px;
+  }
 }
