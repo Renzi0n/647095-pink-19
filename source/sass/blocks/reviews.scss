@@ -1,6 +1,6 @@
 .reviews {
   width: 278px;
-  margin: 49px auto 0;
+  margin: 39px auto 0;
 }
 
 .reviews__slide {
@@ -15,7 +15,7 @@
 
 .reviews__slide-title {
   @include titleTextBold;
-  margin: 0 0 25px;
+  margin: 0 0 10px;
   text-align: center;
   color: rgba(0, 0, 0, 1);
 }
@@ -29,37 +29,41 @@
 
 .reviews__slide-text {
   @include infoText($color-font-primary);
-  margin: 0 0 42px;
+  margin: 0 0 38px;
   text-align: center;
 }
 
 @media (min-width: $tablet-width) {
   .reviews {
     width: 620px;
-    margin-top: 106px;
+    margin-top: 25px;
   }
 
   .reviews__slide-title {
     order: 2;
-    margin: 44px 0 0;
+    margin: 38px 0 0;
     font-size: 20px;
+    line-height: 30px;
   }
 
   .reviews__slide-info {
     display: block;
+    margin-bottom: 33px;
+    line-height: 30px;
   }
 
   .reviews__slide-text {
     order: 1;
     margin: 0;
     font-size: 18px;
+    line-height: 30px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .reviews {
-    width: 687px;
-    margin-top: 72px;
+    width: 690px;
+    margin-top: 63px;
     position: relative;
 
     &::before {
@@ -70,6 +74,8 @@
       background-image: url("../img/icon-quotes.svg");
       background-repeat: no-repeat;
       margin: 0 auto;
+      position: relative;
+      top: 7px;
     }
   }
 

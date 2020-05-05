@@ -7,6 +7,10 @@
   @include mobilePaddings;
 }
 
+.page-footer--index {
+  display: none;
+}
+
 .page-footer__logo-item {
   margin-bottom: 38px;
   width: 147px;
@@ -46,6 +50,10 @@
     align-items: flex-start;
   }
 
+  .page-footer--index {
+    display: flex;
+  }
+
   .page-footer__icons {
     margin-bottom: 0;
   }
@@ -58,6 +66,7 @@
 @media (min-width: $desktop-width) {
   .page-footer {
     @include desktopPaddings;
+    padding-top: 75px;
   }
 
   .page-footer__powered-info {

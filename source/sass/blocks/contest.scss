@@ -4,7 +4,7 @@
   background-size: cover;
   background-color: $color-background-primary;
   margin: 0;
-  padding-top: 34px;
+  padding-top: 30px;
   padding-bottom: 55px;
 
   @include mobilePaddings;
@@ -15,7 +15,7 @@
   color: $color-font-primary;
   font-size: 14px;
   line-height: 30px;
-  margin: 49px auto 0;
+  margin: 45px auto 0;
   width: 273px;
   text-align: center;
 }
@@ -28,13 +28,14 @@
   .contest__title {
     background-image: url("../img/bg-back-tablet@1x.jpg");
     font-size: 50px;
-    padding-top: 68px;
+    padding-top: 64px;
     padding-bottom: 80px;
   }
 
   .contest__info {
     width: 490px;
     font-size: 18px;
+    margin-top: 93px;
   }
 
   .contest__info-request {

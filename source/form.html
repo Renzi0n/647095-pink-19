@@ -120,38 +120,6 @@
             </ul>
           </fieldset>
 
-          <fieldset class="form__app">
-            <legend class="form__title">С каким приложением путешествовали?</legend>
-            <ul class="form__list">
-              <li class="form__list-item">
-                <input class="form__radio-input" checked type="radio" name="application" value="iOS" id="ios">
-                <label class="form__check-label" for="ios">Pink для iOS</label>
-              </li>
-              <li class="form__list-item">
-                <input class="form__radio-input" type="radio" name="application" value="Android" id="android">
-                <label class="form__check-label" for="android">Pink для Android</label>
-              </li>
-              <li class="form__list-item">
-                <input class="form__radio-input" type="radio" name="application" value="Windows Phone" id="windows">
-                <label class="form__check-label" for="windows">Windows Phone</label>
-              </li>
-            </ul>
-          </fieldset>
-
-          <fieldset class="form__contact">
-            <legend class="form__title">Контактная информация</legend>
-            <ul class="form__list">
-              <li class="form__list-item">
-                <label class="form__text-label form__text-label--tel" for="tel">Номер телефона</label>
-                <input class="form__text-input" type="tel" name="telephone" placeholder="Номер, пожалуйста" id="tel">
-              </li>
-              <li class="form__list-item">
-                <label class="form__text-label form__text-label--email" for="email">Адрес почты</label>
-                <input class="form__text-input" type="email" name="email" placeholder="Введите почту *" required id="email">
-              </li>
-            </ul>
-          </fieldset>
-
           <fieldset class="form__achievements">
             <legend class="form__title">Ваши безбашенные достижения в путешествии</legend>
             <ul class="form__list">
@@ -182,6 +150,38 @@
             </ul>
           </fieldset>
 
+          <fieldset class="form__contact">
+            <legend class="form__title">Контактная информация</legend>
+            <ul class="form__list">
+              <li class="form__list-item">
+                <label class="form__text-label form__text-label--tel" for="tel">Номер телефона</label>
+                <input class="form__text-input" type="tel" name="telephone" placeholder="Номер, пожалуйста" id="tel">
+              </li>
+              <li class="form__list-item">
+                <label class="form__text-label form__text-label--email" for="email">Адрес почты</label>
+                <input class="form__text-input" type="email" name="email" placeholder="Введите почту *" required id="email">
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="form__app">
+            <legend class="form__title">С каким приложением путешествовали?</legend>
+            <ul class="form__list">
+              <li class="form__list-item">
+                <input class="form__radio-input" checked type="radio" name="application" value="iOS" id="ios">
+                <label class="form__check-label" for="ios">Pink для iOS</label>
+              </li>
+              <li class="form__list-item">
+                <input class="form__radio-input" type="radio" name="application" value="Android" id="android">
+                <label class="form__check-label" for="android">Pink на Android</label>
+              </li>
+              <li class="form__list-item">
+                <input class="form__radio-input" type="radio" name="application" value="Windows Phone" id="windows">
+                <label class="form__check-label" for="windows">Windows Phone</label>
+              </li>
+            </ul>
+          </fieldset>
+
           <fieldset class="form__emotions">
             <legend class="form__title">Опишите свои эмоции</legend>
             <textarea class="form__text-input form__text-input--textarea" name="emotions" placeholder="Можно прям в красках, не стесняясь в выражениях" id="emotions" cols="30" rows="10"></textarea>
@@ -189,7 +189,7 @@
 
           <div class="form__footer">
             <button class="form__submit" type="submit">Отправить форму</button>
-            <p class="form__description"><span>*</span> — обязательные поля</p>
+            <p class="form__description"><span>*</span> — обязательные <span>для заполнения</span> поля</p>
           </div>
         </form>
 
