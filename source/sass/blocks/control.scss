@@ -7,6 +7,14 @@
 
 .control__btn {
   display: none;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
 }
 
 .control__radio {
@@ -23,8 +31,20 @@
   background-color: $color-background-primary;
   opacity: 0.3;
   border-radius: 6px;
-  margin-right: 19px;
+  margin-right: 18px;
   cursor: pointer;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
+}
+
+.control__radio + label:last-of-type::before {
+  margin-right: 0;
 }
 
 .control__radio:focus + label::before {
@@ -66,11 +86,11 @@
 
   .control__btn--left {
     background-image: url("../img/icon-review-arrow-left.svg");
-    left: -105px;
+    left: -125px;
   }
 
   .control__btn--right {
     background-image: url("../img/icon-review-arrow-right.svg");
-    right: -105px;
+    right: -125px;
   }
 }
