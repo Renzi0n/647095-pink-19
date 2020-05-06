@@ -40,7 +40,7 @@
   cursor: pointer;
 
   &:focus {
-    outline: rgba(0, 0, 0, 1) auto 27px;
+    outline: 2px solid rgba(0, 0, 0, 1);
   }
 
   &:hover {
@@ -48,7 +48,6 @@
   }
 
   &:active {
-    background-color: rgba(28, 155, 94, 1);
     color: rgba(255, 255, 255, 0.3);
   }
 

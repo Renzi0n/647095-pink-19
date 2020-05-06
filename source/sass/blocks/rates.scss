@@ -150,7 +150,7 @@
   }
 
   .rates__cell--hit {
-    background-image: url("../../img/bg-hit-tablet.svg");
+    background-image: url("../img/bg-hit-tablet.svg");
 
     &::before {
       width: 26px;
@@ -168,6 +168,12 @@
 @media (min-width: $desktop-width) {
   .rates {
     padding: 155px 0 52px;
+  }
+
+  .rates td {
+    height: 61px;
+    width: 235px;
+    box-sizing: border-box;
   }
 
   .rates::before {
@@ -191,12 +197,18 @@
     width: 231px;
   }
 
+  .rates__cell--hit {
+    background-image: url("../img/bg-hit-desktop.svg");
+
+    &::before {
+      left: 14px;
+      top: 14px;
+    }
+  }
+
   .rates__row-title {
     width: 205px;
-    padding-left: 18px;
-    padding-right: 8px;
-    padding-top: 5px;
-    padding-bottom: 3px;
+    padding: 2px 8px 3px 20px;
     font-size: 18px;
   }
 

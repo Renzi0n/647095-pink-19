@@ -1,7 +1,3 @@
-.form {
-  overflow: hidden;
-}
-
 .form fieldset {
   border: none;
   padding: 21px 20px 8px;
@@ -21,6 +17,10 @@
   margin-left: auto;
   margin-right: auto;
   width: 276px;
+}
+
+.form__contact .form__list {
+  margin-top: 10px;
 }
 
 .form__list-item {
@@ -85,7 +85,7 @@
   color: $color-font-primary;
   font-size: 18px;
   line-height: 30px;
-  padding: 18px 19px;
+  padding: 0 19px;
   border: 2px solid rgba(229, 229, 229, 1);
   width: 276px;
   height: 59px;
@@ -141,6 +141,7 @@
 .form__text-input--textarea {
   resize: none;
   height: 197px;
+  padding-top: 17px;
 }
 
 .form .form__emotions {
@@ -152,7 +153,7 @@
   color: $color-font-primary;
   font-size: 14px;
   line-height: 30px;
-  margin: 34px 0 16px;
+  margin: 36px 0 16px;
   text-align: center;
   text-transform: uppercase;
 }
@@ -207,19 +208,20 @@
 
   .form .form__app {
     order: -2;
-    padding: 35px 0 10px 55px;
+    padding: 32px 0 10px 55px;
+    margin-bottom: 52px;
     background-color: transparent;
   }
 
   .form .form__achievements {
     order: 0;
     background-color: transparent;
-    padding: 37px 0 10px 55px;
+    padding: 38px 0 10px 55px;
   }
 
   .form .form__user-name {
     border: none;
-    padding: 71px 0 0;
+    padding: 72px 0 0;
     margin-bottom: 0;
     order: -2;
   }
@@ -231,7 +233,8 @@
 
   .form .form__contact {
     order: -1;
-    padding: 34px 60px 8px 55px;
+    padding: 24px 60px 6px 55px;
+    margin-bottom: 52px;
   }
 
   .form .form__emotions {
@@ -312,7 +315,7 @@
     justify-content: space-between;
     align-items: flex-end;
     height: 60px;
-    margin-bottom: 47px;
+    margin-bottom: 49px;
     width: 100%;
   }
 
@@ -362,7 +365,7 @@
   }
 
   .form .form__contact {
-    padding-top: 28px;
+    padding-top: 18px;
     padding-bottom: 0;
   }
 
@@ -414,5 +417,6 @@
 
   .form__footer {
     margin-bottom: 0;
+    margin-top: 40px;
   }
 }
