@@ -3,6 +3,11 @@
   background-repeat: no-repeat;
   background-color: $color-background-primary;
   background-size: cover;
+  background-position: center;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+  }
 }
 
 .application__title {
@@ -87,6 +92,10 @@
     position: relative;
     max-width: 100%;
     overflow: hidden;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+    }
   }
 
   .application__title {
@@ -122,6 +131,11 @@
     z-index: 0;
     height: 545px;
     margin-left: 0;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      right: -20px;
+      width: 700px;
+    }
   }
 
   .application__info {
@@ -135,6 +149,10 @@
   .application {
     background-image: url("../img/bg-back-desktop@1x.jpg");
     padding-bottom: 122px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+    }
   }
 
   .application__title {
