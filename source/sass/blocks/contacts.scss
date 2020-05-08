@@ -20,7 +20,7 @@
   }
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/bg-map-mobile@2x.png");
+    background-image: url("../img/bg-map-mobile@2x.jpg");
   }
 }
 
@@ -100,7 +100,7 @@
     padding: 0 0 345px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/bg-map-tablet@2x.png");
+      background-image: url("../img/bg-map-tablet@2x.jpg");
     }
   }
 
@@ -148,7 +148,7 @@
     padding: 0 0 498px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/bg-map-desktop@2x.png");
+      background-image: url("../img/bg-map-desktop@2x.jpg");
     }
   }
 
