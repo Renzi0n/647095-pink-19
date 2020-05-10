@@ -14,13 +14,14 @@
   height: 22px;
   margin-bottom: 22px;
   margin-left: 20px;
+  color: rgba(255, 255, 255, 1);
 
-  &:hover path {
-    fill: $color-font-sub;
+  &:hover {
+    color: $color-font-sub;
   }
 
-  &:active path {
-    fill: $color-font-secondary;
+  &:active {
+    color: $color-font-secondary;
     opacity: 0.3;
   }
 }
@@ -38,14 +39,19 @@
   cursor: pointer;
   padding-left: 0;
   padding-right: 12px;
+  color: $color-font-secondary;
 
-  & path:hover {
-    fill: $color-font-sub;
+  &:hover {
+    color: $color-font-sub;
   }
 
-  & path:active {
+  &:active {
     opacity: 0.3;
   }
+}
+
+.page-header__toggle-open {
+  display: none;
 }
 
 .page-header__toggle svg {
