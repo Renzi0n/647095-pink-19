@@ -43,10 +43,11 @@ gulp.task("clean", function () {
 
 gulp.task("copy", function () {
     return gulp.src([
-      "source/fonts/**/*.{woff, woff2}",
-      "source/img/**",
+      "source/fonts/**/*.{woff,woff2}",
+      "source/img/*.{jpg,png,svg,webp}",
       "source/js/**.js",
-      "source/*.ico"
+      "source/*.ico",
+      "source/*.html"
     ], {
       base: "source"
     })
