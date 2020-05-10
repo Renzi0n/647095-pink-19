@@ -15,16 +15,14 @@
   display: block;
   margin-bottom: 38px;
   width: 147px;
+  color: $color-font-primary;
 
-  &:hover .page-footer__logo-item {
-    fill: rgba(210, 40, 86, 1);
+  &:hover svg {
+    color: rgba(210, 40, 86, 1);
   }
 
-  &:active .page-footer__logo-item {
-    fill: $color-background-primary;
-  }
-
-  &:active {
+  &:active svg {
+    color: $color-background-primary;
     opacity: 0.3;
   }
 }
@@ -49,14 +47,14 @@
 }
 
 .page-footer__powered-info-logo svg {
-  fill: $color-font-sub;
+  color: $color-font-sub;
 
   &:hover {
-    fill: rgba(0, 0, 0, 1);
+    color: rgba(0, 0, 0, 1);
   }
 
   &:active {
-    fill: rgba(0, 0, 0, 0.3);
+    color: rgba(0, 0, 0, 0.3);
   }
 }
 
