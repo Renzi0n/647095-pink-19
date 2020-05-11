@@ -10,10 +10,11 @@ var csso = require('gulp-csso');
 var rename = require("gulp-rename");
 var del = require("del");
 var imagemin = require("gulp-imagemin");
+var htmlmin = require("gulp-htmlmin");
 var server = require("browser-sync").create();
 
 gulp.task("css", function () {
-  return gulp.src("source/sass/style.scss")
+  return gulp.src("source/sass/styles/style.scss")
     .pipe(plumber())
     .pipe(sourcemap.init())
     .pipe(sass())
@@ -46,11 +47,28 @@ gulp.task("copy", function () {
       "source/fonts/**/*.{woff,woff2}",
       "source/img/*.{jpg,png,svg,webp}",
       "source/js/**.js",
-      "source/*.ico",
-      "source/*.html"
+      "source/*.ico"
     ], {
       base: "source"
     })
+    .pipe(gulp.dest("build"));
+});
+
+gulp.task("copy", function () {
+    return gulp.src([
+      "source/fonts/**/*.{woff,woff2}",
+      "source/img/*.{jpg,png,svg,webp}",
+      "source/js/**.js",
+      "source/*.ico"
+    ], {
+      base: "source"
+    })
+    .pipe(gulp.dest("build"));
+});
+
+gulp.task('htmlminify', () => {
+  return gulp.src("source/*.html")
+    .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest("build"));
 });
 
@@ -67,5 +85,5 @@ gulp.task("server", function () {
   gulp.watch("source/*.html").on("change", server.reload);
 });
 
-gulp.task("build", gulp.series("clean", "copy", "css"));
+gulp.task("build", gulp.series("clean", "copy", "css", "htmlminify"));
 gulp.task("start", gulp.series("build", "server"));
