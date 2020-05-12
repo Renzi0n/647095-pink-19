@@ -12,7 +12,8 @@
   </head>
   <body>
 
-    <header class="page-header">
+     <header class="page-header">
+<!-- При включенном js класс page-header--js(закрытое меню), page-header--js-open (открытое меню) Первому после хэдера блоку задать модификатор name--js -->
 
       <a href="#" class="page-header__logo" title="Логотип PINK">
         <svg class="page-header__logo-mobile" width="74" height="22">
@@ -33,7 +34,7 @@
           <use xlink:href="img/sprite.svg#navBurger"></use>
         </svg>
       </button>
-      <nav class="navigation">
+      <nav class="page-header__nav navigation">
         <ul class="navigation__list">
           <li class="navigation__item">
             <a href="index.html">Главная</a>
@@ -236,6 +237,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/picturefill/3.0.3/picturefill.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/svg4everybody/2.1.9/svg4everybody.min.js"></script>
     <script>svg4everybody();</script>
-    <script src="js/app.min.js"></script>
   </body>
 </html>

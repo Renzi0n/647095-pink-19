@@ -74,9 +74,9 @@ gulp.task('htmlminify', function () {
 });
 
 gulp.task('js', function () {
-  return gulp.src("source/js/scripts/*.js")
-    .pipe(concat("app.min.js"))
+  return gulp.src("source/js/*.js")
     .pipe(jsmin())
+    .pipe(rename({suffix: '.min'}))
     .pipe(gulp.dest("build/js"))
     .pipe(server.stream());
 });
@@ -92,7 +92,7 @@ gulp.task("server", function () {
 
   gulp.watch("source/sass/**/*.scss", gulp.series("css"));
   gulp.watch("source/*.html",  gulp.series("htmlminify"));
-  gulp.watch("source/js/scripts/*.js",  gulp.series("js"));
+  gulp.watch("source/js/*.js",  gulp.series("js"));
 });
 
 gulp.task("build", gulp.series("clean", "copy", "css", "htmlminify", "js"));

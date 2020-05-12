@@ -12,7 +12,9 @@
   </head>
   <body>
 
-    <header class="page-header page-header--js">
+    <header class="page-header">
+    <!-- При включенном js класс page-header--js(закрытое меню) и первому после хэдера блоку задать модификатор name--js,
+    page-header--js-open (открытое меню)-->
 
       <a href="#" class="page-header__logo" title="Логотип PINK">
         <svg class="page-header__logo-mobile" width="74" height="22">
@@ -56,7 +58,7 @@
 
       <h1 class="visually-hidden">PINK - фотоприложениe для раскрашиваниe серых будней</h1>
 
-      <section class="application">
+      <section class="application application--js">
         <h2 class="application__title">Взгляните на жизнь иначе!</h2>
         <picture>
           <source type="image/webp" media="(min-width: 1200px)" srcset="img/iphone-hand-desktop@1x.webp 1x, img/iphone-hand-desktop@2x.webp 2x">
@@ -365,6 +367,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/picturefill/3.0.3/picturefill.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/svg4everybody/2.1.9/svg4everybody.min.js"></script>
     <script>svg4everybody();</script>
-    <script src="js/app.min.js"></script>
+    <script src="js/control.min.js"></script>
   </body>
 </html>

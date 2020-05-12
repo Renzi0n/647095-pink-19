@@ -10,6 +10,10 @@
   }
 }
 
+.application--js {
+  padding-top: 69px;
+}
+
 .application__title {
   @include titleText($color-font-secondary);
   padding-top: 22px;
@@ -95,6 +99,10 @@
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-back-tablet@2x.jpg");
+    }
+
+    .application--js {
+      padding-top: 110px;
     }
   }
 

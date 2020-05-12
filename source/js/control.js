@@ -1,7 +1,36 @@
 let reviewsRadio = document.querySelectorAll("#controlReviews .control__radio"),
     reviewsSlide = document.querySelectorAll(".reviews__slide"),
     ratesRadio = document.querySelectorAll("#controlRates .control__radio"),
-    rates = document.querySelector(".rates");
+    rates = document.querySelector(".rates"),
+    controlBtnLeft = document.querySelector(".control__btn--left"),
+    controlBtnRight = document.querySelector(".control__btn--right"),
+    i;
+
+controlBtnLeft.addEventListener("click", function () {
+  for (let j = 0; j < reviewsSlide.length; j++) {
+    if (reviewsSlide[j].classList.contains("reviews__slide--show")) {
+      reviewsSlide[j].classList.remove("reviews__slide--show");
+      i = j;
+    }
+  }
+  if (i === 0) {
+    i = 3;
+  }
+  reviewsSlide[i - 1].classList.add("reviews__slide--show");
+});
+
+controlBtnRight.addEventListener("click", function () {
+  for (let j = 0; j < reviewsSlide.length; j++) {
+    if (reviewsSlide[j].classList.contains("reviews__slide--show")) {
+      reviewsSlide[j].classList.remove("reviews__slide--show");
+      i = j;
+    }
+  }
+  if (i === 2) {
+    i = -1;
+  }
+  reviewsSlide[i + 1].classList.add("reviews__slide--show");
+});
 
 function reviews (i) {
   reviewsRadio[i].addEventListener("click", function () {

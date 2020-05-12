@@ -16,6 +16,10 @@
   }
 }
 
+.users-photos--js {
+  padding-top: 69px;
+}
+
 .users-photos__info {
   @include infoText($color-font-primary);
   line-height: 30px;
@@ -41,6 +45,10 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+  }
+
+  .users-photos--js {
+    padding-top: 110px;
   }
 
   .users-photos__title {

@@ -1,29 +1,44 @@
 .page-header {
-  background-color: rgba(40, 54, 69, 1);
+  background-color: $color-background-primary;
   padding-top: 22px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 
-// .page-header--js {
-//   position: sticky;
-//   top: 0;
-//   z-index: 2;
-// }
+.page-header--js {
+  background-color: rgba(40, 54, 69, 0.3);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 2;
+}
 
-// .page-header--js .page-header__nav {
-//   display: none;
-// }
+.page-header--js .page-header__nav {
+  display: none;
+}
 
-// .page-header--js .page-header__toggle {
-//   display: flex;
-//   justify-content: center;
-// }
+.page-header--js .page-header__toggle {
+  display: flex;
+  justify-content: flex-end;
+}
 
-// .page-header--js .page-header__toggle-close {
-//   display: none;
-// }
+.page-header--js .page-header__toggle-close {
+  display: none;
+}
+
+.page-header--js-open {
+  background-color: $color-background-primary;
+}
+
+.page-header--js-open .page-header__nav,
+.page-header--js-open .page-header__toggle-close {
+  display: block;
+}
+
+.page-header--js-open .page-header__toggle-open {
+  display: none;
+}
 
 .page-header__logo {
   width: 75px;
@@ -54,7 +69,8 @@
   border: none;
   cursor: pointer;
   padding-left: 0;
-  padding-right: 12px;
+  padding-right: 0;
+  margin-right: 20px;
   color: $color-font-secondary;
   display: none;
 
