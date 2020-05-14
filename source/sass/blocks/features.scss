@@ -143,18 +143,12 @@
     align-items: center;
   }
 
-  .features__item:nth-of-type(3n+1) {
-
-    &::before {
-      background-position-x: -5px;
-    }
+  .features__item:nth-of-type(3n+1)::before {
+    background-position-x: -5px;
   }
 
-  .features__item:nth-of-type(3n+3) {
-
-    &::before {
-      background-position-x: 8px;
-    }
+  .features__item:nth-of-type(3n+3)::before {
+    background-position-x: 8px;
   }
 
   .features__image {
