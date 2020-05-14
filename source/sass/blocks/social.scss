@@ -3,11 +3,12 @@
   padding: 0;
   margin-top: 0;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
 .social__item a {
-  margin-right: 12px;
+  margin: 0 6px 6px;
   border-radius: 50px;
   border: 3px solid rgba(40, 54, 69, 0.1);
   width: 46px;
@@ -24,10 +25,6 @@
   &:active {
     opacity: 0.3;
   }
-}
-
-.social__item:nth-of-type(3) a {
-  margin: 0;
 }
 
 .social__item svg {

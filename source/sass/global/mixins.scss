@@ -22,8 +22,8 @@
 }
 
 @mixin desktopPaddings {
-  padding-left: 130px;
-  padding-right: 130px;
+  padding-left: calc((100vw - 940px) / 2);
+  padding-right: calc((100vw - 940px) / 2);
 }
 
 @mixin formBtn {

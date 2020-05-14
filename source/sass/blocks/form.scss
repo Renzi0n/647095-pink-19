@@ -384,22 +384,22 @@
   }
 
   .form .form__achievements {
-    height: 248px;
+    padding-bottom: 12px;
   }
 
   .form__achievements .form__list {
-    height: 228px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    column-count: 3;
+    column-gap: 47px;
   }
 
   .form__achievements .form__list-item {
-    margin-bottom: 2px;
+    margin-bottom: 0;
+    width: 262px;
+    page-break-inside: avoid;
   }
 
   .form__achievements .form__check-label::before {
-    margin-right: 23px;
+    margin-right: 22px;
   }
 
   .form .form__emotions {

@@ -103,10 +103,9 @@
 
 @media (min-width: $desktop-width) {
   .features {
+    @include desktopPaddings;
     display: flex;
     flex-direction: column;
-    padding-left: 163px;
-    padding-right: 163px;
 
     &::before {
       transform: rotate(-4.5deg);
@@ -145,18 +144,16 @@
   }
 
   .features__item:nth-of-type(3n+1) {
-    align-items: flex-start;
 
     &::before {
-      background-position-x: -32px;
+      background-position-x: -5px;
     }
   }
 
   .features__item:nth-of-type(3n+3) {
-    align-items: flex-end;
 
     &::before {
-      background-position-x: 22px;
+      background-position-x: 8px;
     }
   }
 

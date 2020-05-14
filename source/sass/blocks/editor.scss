@@ -32,8 +32,7 @@
 }
 
 .editor__btn {
-  fill: $color-background-primary;
-  opacity: 0.3;
+  fill: rgba(40, 54, 69, 0.3);
   border: none;
   background-color: transparent;
   cursor: pointer;
@@ -41,8 +40,7 @@
   padding: 0;
 
   &:hover svg {
-    fill: $color-background-primary;
-    opacity: 0.5;
+    fill: rgba(40, 54, 69, 0.5);
   }
 }
 
@@ -66,8 +64,8 @@
   @include titleTextBold;
   line-height: 18px;
   background-color: transparent;
-  width: 280px;
-  height: 55px;
+  min-width: 280px;
+  min-height: 55px;
   padding: 0;
   border-radius: 140px;
   cursor: pointer;
@@ -265,7 +263,7 @@
 
   .editor__submit,
   .editor__reset {
-    width: 260px;
+    min-width: 260px;
     margin-right: 10px;
   }
 
@@ -277,8 +275,8 @@
 @media (min-width: $desktop-width) {
   .editor {
     width: 800px;
-    margin: 0 auto 22px;
-    padding: 38px 60px 57px 80px;
+    margin: 0 auto 26px;
+    padding: 40px 60px 57px 80px;
   }
 
   .editor__image {
@@ -328,7 +326,7 @@
 
   .editor__submit,
   .editor__reset {
-    width: 183px;
+    min-width: 183px;
     margin-top: 78px;
     margin-right: 0;
   }
